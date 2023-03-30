@@ -13,32 +13,62 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <!-- <div class="card"> -->
+    <div class="logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+<div class="container">
+  <div class="container__calcular">
+    <div class="container__calcular__primer-bloque">
+        <label class="container__label">Bill</label>
+        <input id="total-factura" class="container__input" placeholder="0" type="number">
+        <img class="container__input__dollar" src="images/icon-dollar.svg" alt="dolar" class="icon">
+    </div>
+    <div class="container__calcular__segundo-bloque">
+        <label class="container__label">Select Tip %</label>
+        <div class="container__calcular__segundo-bloque__cantidad">
+        <button  id="" class="container__button">5%</button>
+        <button  id="" class="container__button">10%</button>
+        <button  id="" class="container__button">15%</button>
+        <button  id="" class="container__button">25%</button>
+        <button  id="" class="container__button">50%</button>
+        <input  id="" class="container__button--custom" placeholder="Custom"/>
+      </div>
+    </div>
+    <div class="container__calcular__tercero-bloque">
+      <label class="container__label"> Number of People</label><span class="container__label__error">Can`t be Zero</span>
+      <input id="persona" class="container__input" placeholder="0" type="number"/>
+      <img class="container__input__person" src="images/icon-person.svg" alt="icon-person" type="icon"/>
+  </div>
+</div>
+<div class="container__resultado">
+  <div class="container__resultado--tip-amount">
+    <div class="container__resultado--tip-amount--text">
+      <span>Tip Amount</span>
+      <span>/ person</span>
+    </div>
+    <span class="mostrar-tip-amount" id="mostrar-tip-amount">$0.00</span>
+ </div>
+ <div class="container__resultado__total">
+    <div class="container__resultado_-total--text">
+      <span>Total</span>
+      <span>/ person</span>
+    </div>
+    <span class="mostrar-total" id="mostrar-total">$0.00</span>
+  </div>
+  <butto id="reset" class="container__resultado__reset">Reset</butto>
+  </div>
+</div>
+<!-- </div> -->
 
-  Bill
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>

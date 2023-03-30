@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c5e4e7;
+  font-family: 'Space Mono', monospace;
+}
+
+.logo {
+  margin-top: 8%;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  gap: 10px;
+}
+
+.container__calcular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.container__calcular__primer-bloque {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__calcular__segundo-bloque__cantidad {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70px 70px 70px;
+      grid-template-columns: 70px 70px 70px;
+  gap: 10px;
+}
+
+.container__calcular__tercero-bloque {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__resultado {
+  background-color: #00494d;
+  border-radius: 10px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__resultado--tip-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__resultado__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__resultado__reset {
+  background-color: #26c0ab;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00494d;
+  border-radius: 5px;
+}
+
+.container__input {
+  background-color: #f4fafa;
+  padding: 5px;
+  font-family: 'Space Mono', monospace;
+  border-radius: 5px;
+  border: none;
+  text-align: right;
+  outline-color: #26c0ab;
+}
+
+.container__input__dollar {
+  position: absolute;
+  bottom: 142px;
+  left: 371px;
+}
+
+.container__input__person {
+  position: absolute;
+  bottom: -65px;
+  left: 370px;
+}
+
+.container__button {
+  background-color: #00494d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+}
+
+.container__button:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.container__button--custom {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f4fafa;
+  color: #5e7a7d;
+  font-weight: 700;
+  outline-color: #26c0ab;
+  cursor: pointer;
+}
+
+.container__button--custom:focus-visible {
+  border-color: #26c0ab;
+}
+
+.container__label__error {
+  display: none;
+  color: red;
+}
+
+@media (max-width: 420px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .container__calcular__segundo-bloque__cantidad {
+    -ms-grid-columns: 170px 170px;
+        grid-template-columns: 170px 170px;
+  }
+  .container__button--custom::-webkit-input-placeholder {
+    text-align: right;
+  }
+  .container__button--custom:-ms-input-placeholder {
+    text-align: right;
+  }
+  .container__button--custom::-ms-input-placeholder {
+    text-align: right;
+  }
+  .container__button--custom::placeholder {
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
